@@ -1,4 +1,4 @@
-class AccueilScene extends Phaser.Scene {
+class Accueil extends Phaser.Scene {
   constructor() {
       super({ key: "Accueil" });
   }
@@ -6,6 +6,7 @@ class AccueilScene extends Phaser.Scene {
   preload() {
       // Chargement des images
       this.load.image('foret', 'Assets/foret_fond.jpg');
+      this.load.image('logo', 'Assets/logo.png');
       this.load.image('btnCommencer', 'Assets/Commencer.png');
       this.load.image('btnCredits', 'Assets/Crédit.png');
       this.load.image('btnComment', 'Assets/Cmtjouer.png');
@@ -16,6 +17,7 @@ class AccueilScene extends Phaser.Scene {
       const width = this.scale.width;
       const height = this.scale.height;
       this.img = this.add.image(width / 2, height / 2, 'foret');
+      this.img = this.add.image(width / 2, height / 2, 'logo');
 
       // Bouton Commencer
       const commencerBtn = this.add.image(700, 500, "btnCommencer").setInteractive().setScale(0.5);

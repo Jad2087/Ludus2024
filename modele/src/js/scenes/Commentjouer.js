@@ -1,12 +1,12 @@
-class Jeu extends Phaser.Scene {
+class CmtJouer extends Phaser.Scene {
     constructor() {
-        super({ key: "Jeu" });
+        super({ key: "CommentJouer" });
     }
   
     preload() {
         // Chargement des images
         this.load.image('foret', 'Assets/foret_fond.jpg');
-        this.load.image('btnQuitter', 'Assets/Quitter.png');
+        this.load.image('btnRetour', 'Assets/Retour.png');
        
     }
   
@@ -17,8 +17,8 @@ class Jeu extends Phaser.Scene {
         this.img = this.add.image(width / 2, height / 2, 'foret');
   
         // Bouton Quitter
-        const quitterBtn = this.add.image(700, 500, "btnQuitter").setInteractive().setScale(0.5);
-        quitterBtn.on("pointerdown", () => this.scene.start("Accueil"));
+        const retourBtn = this.add.image(700, 500, "btnRetour").setInteractive().setScale(0.5);
+        retourBtn.on("pointerdown", () => this.scene.start("Accueil"));
   
       
     }

@@ -4,7 +4,8 @@ const config = {
     transparent: true,
     width: 1620,
     height: 980,
-    scene: [AccueilScene, JeuScene]
+    scene: [Accueil, Jeu, Credit, CmtJouer ]
+    
 };
 
 const game = new Phaser.Game(config);
