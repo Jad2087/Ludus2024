@@ -4,7 +4,7 @@ const config = {
     transparent: true,
     width: 1620,
     height: 980,
-    scene: [Accueil, Jeu, Credit, CmtJouer ]
+    scene: [Accueil, Jeu, Credit, CmtJouer, PartieTerminee, Victoire ]
     
 };
 

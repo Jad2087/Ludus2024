@@ -18,7 +18,7 @@ class Jeu extends Phaser.Scene {
   
         // Bouton Quitter
         const quitterBtn = this.add.image(700, 500, "btnQuitter").setInteractive().setScale(0.5);
-        quitterBtn.on("pointerdown", () => this.scene.start("Accueil"));
+        quitterBtn.on("pointerdown", () => this.scene.start("Jeu"));
   
       
     }
